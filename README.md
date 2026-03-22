@@ -6,8 +6,8 @@ A program lehetővé teszi különböző búvárhelyek nyilvántartását, keres
 A projekt későbbi részeként a tárolt adatokból automatikusan generált HTML oldalak is készülnek.
 
 ## Csapattagok
-- Saját neved
-- Társad neve
+- Mercz Péter
+- Fekete Balázs
 
 ## Választott téma
 Búvárhelyek
