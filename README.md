@@ -33,8 +33,6 @@ Jelenleg megvalósított funkciók:
 - keresés név alapján
 - szűrés kategória szerint
 - rendezés értékelés alapján
-
-Tervezett további funkciók:
 - CSV mentés
 - CSV betöltés
 - HTML export
