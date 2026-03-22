@@ -6,8 +6,8 @@ A program lehetővé teszi különböző búvárhelyek nyilvántartását, keres
 A projekt későbbi részeként a tárolt adatokból automatikusan generált HTML oldalak is készülnek.
 
 ## Csapattagok
-- Saját neved
-- Társad neve
+- Mercz Péter
+- Fekete Balázs
 
 ## Választott téma
 Búvárhelyek
@@ -33,8 +33,6 @@ Jelenleg megvalósított funkciók:
 - keresés név alapján
 - szűrés kategória szerint
 - rendezés értékelés alapján
-
-Tervezett további funkciók:
 - CSV mentés
 - CSV betöltés
 - HTML export
