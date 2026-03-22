@@ -11,6 +11,7 @@ while (running)
     Console.WriteLine("5 - Rendezés értékelés szerint");
     Console.WriteLine("6 - CSV mentés");
     Console.WriteLine("7 - CSV betöltés");
+    Console.WriteLine("8 - HTML export");
     Console.WriteLine("0 - Kilépés");
 
     string choice = Console.ReadLine();
@@ -45,7 +46,9 @@ while (running)
         case "7":
             LoadFromCsvMenu(manager);
             break;
-
+        case "8":
+            ExportHtml(manager);
+            break;
         case "0":
             running = false;
             Console.WriteLine("Kilépés...");
@@ -139,4 +142,105 @@ static void LoadFromCsvMenu(DiveSpotManager manager)
 
     manager.LoadFromCsv(fileName);
     Console.WriteLine("CSV betöltés kész.");
+}
+
+string GenerateTableRows(List<DiveSpot> list)
+{
+    string rows = "";
+
+    foreach (var s in list)
+    {
+        rows += $@"
+        <tr>
+            <td>{s.Name}</td>
+            <td>{s.Category}</td>
+            <td>{s.Description}</td>
+            <td>{s.Depth} m</td>
+            <td>{s.Rating}</td>
+        </tr>";
+    }
+
+    return rows;
+}
+
+string GenerateCards(List<DiveSpot> list, bool onlyFavorites = false)
+{
+    string cards = "";
+
+    foreach (var s in list)
+    {
+        if (onlyFavorites && !s.IsFavorite) continue;
+
+        string favClass = s.IsFavorite ? "card favorite" : "card";
+
+        cards += $@"
+        <div class='{favClass}'>
+            <h3>{s.Name}</h3>
+            <p>{s.Description}</p>
+            <p>Kategória: {s.Category}</p>
+            <p>Mélység: {s.Depth} m</p>
+            <p>⭐ {s.Rating}</p>
+        </div>";
+    }
+
+    return cards;
+}
+
+void ExportHtml(DiveSpotManager manager)
+{
+    string template = File.ReadAllText("template/template.html");
+
+    // INDEX
+    string indexContent = $@"
+    <p>Összes búvárhely: {manager.DiveSpots.Count}</p>
+    <p>Kategóriák száma: {manager.DiveSpots.Select(x => x.Category).Distinct().Count()}</p>
+
+    <div class='card-container'>
+        {GenerateCards(manager.DiveSpots.Take(3).ToList())}
+    </div>";
+
+    string indexHtml = template
+        .Replace("{{TITLE}}", "Főoldal")
+        .Replace("{{HEADER}}", "Üdvözöllek")
+        .Replace("{{DESCRIPTION}}", "Fedezd fel a legjobb búvárhelyeket!")
+        .Replace("{{CONTENT}}", indexContent);
+
+    File.WriteAllText("index.html", indexHtml);
+
+    // ITEMS
+    string itemsContent = $@"
+    <table>
+        <tr>
+            <th>Név</th>
+            <th>Kategória</th>
+            <th>Leírás</th>
+            <th>Mélység</th>
+            <th>Értékelés</th>
+        </tr>
+        {GenerateTableRows(manager.DiveSpots)}
+    </table>";
+
+    string itemsHtml = template
+        .Replace("{{TITLE}}", "Összes hely")
+        .Replace("{{HEADER}}", "Búvárhelyek listája")
+        .Replace("{{DESCRIPTION}}", "Az összes rögzített búvárhely")
+        .Replace("{{CONTENT}}", itemsContent);
+
+    File.WriteAllText("items.html", itemsHtml);
+
+    // FAVORITES
+    string favContent = $@"
+    <div class='card-container'>
+        {GenerateCards(manager.DiveSpots, true)}
+    </div>";
+
+    string favHtml = template
+        .Replace("{{TITLE}}", "Kedvencek")
+        .Replace("{{HEADER}}", "Kedvenc búvárhelyek")
+        .Replace("{{DESCRIPTION}}", "A legjobb helyek gyűjteménye")
+        .Replace("{{CONTENT}}", favContent);
+
+    File.WriteAllText("favorites.html", favHtml);
+
+    Console.WriteLine("HTML export kész!");
 }
