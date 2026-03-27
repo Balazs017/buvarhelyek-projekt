@@ -1,0 +1,15 @@
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\bin\Debug\net10.0\BuvarhelyekApp.exe
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\bin\Debug\net10.0\BuvarhelyekApp.deps.json
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\bin\Debug\net10.0\BuvarhelyekApp.runtimeconfig.json
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\bin\Debug\net10.0\BuvarhelyekApp.dll
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\bin\Debug\net10.0\BuvarhelyekApp.pdb
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\obj\Debug\net10.0\BuvarhelyekApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\obj\Debug\net10.0\BuvarhelyekApp.AssemblyInfoInputs.cache
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\obj\Debug\net10.0\BuvarhelyekApp.AssemblyInfo.cs
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\obj\Debug\net10.0\BuvarhelyekApp.csproj.CoreCompileInputs.cache
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\obj\Debug\net10.0\BuvarhelyekApp.sourcelink.json
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\obj\Debug\net10.0\BuvarhelyekApp.dll
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\obj\Debug\net10.0\refint\BuvarhelyekApp.dll
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\obj\Debug\net10.0\BuvarhelyekApp.pdb
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\obj\Debug\net10.0\BuvarhelyekApp.genruntimeconfig.cache
+C:\Users\mercz\OneDrive\Dokumentumok\GitHub\buvarhelyek-projekt\BuvarhelyekApp\BuvarhelyekApp\obj\Debug\net10.0\ref\BuvarhelyekApp.dll
