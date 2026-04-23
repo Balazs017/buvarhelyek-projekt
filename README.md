@@ -1,4 +1,4 @@
-# 🌊 Búvárhelyek adatkezelő alkalmazás
+# Búvárhelyek adatkezelő alkalmazás
 
 ## Projekt leírása
 Ez a projekt egy C# konzolos alkalmazás, amely búvárhelyek adatainak kezelésére szolgál.  
@@ -44,5 +44,3 @@ A program a későbbiekben az alábbi HTML oldalakat fogja generálni:
 - `items.html` – az összes búvárhely listája
 - `favorites.html` – a kedvenc búvárhelyek külön oldala
 
-## Képek
-A képek később kerülnek hozzáadásra a projekthez.
